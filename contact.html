@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href = "myStyles.css" rel = "stylesheet" type = "text/css"/>
+</head>
+<body>
+    <h1>Here are my contact details:</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>Email:</td>
+                <td>marina.cibis@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Facebook:</td>
+                <td><a href = "https://www.facebook.com/marineseaa">link to my Facebook</a></td>
+            </tr>
+            <tr>
+                <td>Instagram:</td>
+                <td><a href = "https://www.instagram.com/marin.adalmare">link to my Instagram</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--leave your message section  -->
+    <form id="messageForm">
+        <label for="message">Enter your message:</label>
+        <textarea id="message" name="message" required></textarea>
+      
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <input type="submit" value="Submit" onclick="alert('Thank you! You will be contacted soon.')">
+      </form>
+
+    <figure>
+        <img src = "images/greenock.jpg">
+        <button class = "likeBtn">Like</button>
+        <figcaption>Panoramic view across the Firth of Clyde from Lyle Hill, Greenock</figcaption>
+    </figure>
+
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

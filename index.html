@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <!-- link to CSS stylessheet -->
+    <link href = "myStyles.css" rel = "stylesheet" type = "text/css"/>
+
+</head>
+<body>
+    <header>
+        <h1>Hi, my name is Marina, and I am passionate about photography.</h1>
+        <h2>This is my blog where I am going to share my photos as well as some tips and useful information about photography.</h2>
+        <figure>
+            <!-- a photo and a caption to it -->
+            <img src = "images/ivy.jpg">
+            <button class = "likeBtn">Like</button>
+            <figcaption>Autumn in Edinburgh zoo</figcaption>
+        </figure>
+        <nav>
+            <ul id="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <!-- link to the page whith blog posts -->
+                <li><a href="blog.html">My Blog</a></li>
+                <!-- link to facebook -->
+                <li><a href="https://www.facebook.com/marineseaa">My Facebook</a></li>
+                <!-- link to instagram -->
+                <li><a href="https://www.instagram.com/marin.adalmare/">My Instagram</a></li>
+                <!-- link to page with contact details -->
+                <li><a href="contact.html">Contact me</a></li>
+                <!-- link to save for later list -->
+                <li><a href="saveforlater.html">Save For Later</a></li>
+              </ul>
+        </nav>
+    </header>
+    <h1>Why photography is a great hobby</h1>
+    <!-- section about photography as a hobby -->
+    <div class = "hobby">
+        <p>
+        My name is Marina. Photography has been my hobby for quite a long time. 
+        It filled my life in a wonderful fulfilling way and helped me to discover and develop a creative side of me.
+        Photography taught me to notice my world and to be aware of the wonderful little things that surround us each day.
+        </p>
+        <p>
+        Photography can help you to capture anyting which is important for you.
+        It's not only a memory, but it can bring you back to the feelings of that particular moment.
+        </p>
+        <p>
+        You can take up photography as a hobby at any time, any age and with any camera. 
+        In this blog I am going to share a lot of useful inforamtion and tips about photography.
+        If you want to get updates as to new articles on this blog, please, enter your email and click subscribe button at the bottom of this page.
+        </p>
+    </div>
+
+    <!-- quotes about photgraphy with added "save for later button under each quote" -->
+    <h1>My favourtie quotes about photgraphy</h1>
+    <div>
+        <p id = "quote1" class = "quote"><q>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever… It remembers little things, long after you have forgotten everything.</q>
+            – Aaron Siskind <br>
+            <button class = "saveForLater" onclick="save()">Save for later</button>
+        </p>
+        
+    </div>
+    <div>
+        <p id = "quote2" class = "quote"><q>Sometimes I enjoy just photographing the surface because I think it can be as revealing as going to the heart of the matter.</q> - Annie Leibovitz
+            <button class = "saveForLater" onclick="save()">Save for later</button></p>
+        </p>
+    </div>
+    <div>
+        <p id = "quote3" class = "quote"><q>Every viewer is going to get a different thing. That's the thing about painting, photography, cinema.</q> - David Lynch
+            <button class = "saveForLater" onclick="save()">Save for later</button></p>
+        </p>
+    </div>
+
+    <!--leave comments section  -->
+    <form>
+        <label for="comment">Leave a comment:</label><br>
+        <textarea id="comment" name="comment"></textarea><br><br>
+        <input type="submit" value="Submit" onclick="alert('Your comment has been sent!')">
+      </form> 
+    
+    <!--subscribe to newsletter section  -->
+    <h3>Subscribe to a Newsletter</h3>
+
+    <!-- radio buttons -->
+    <fieldset>
+       <legend>Your favourite photography genre:</legend>
+        <div>
+            <input type="radio" id="landscape" name="fav_genre" value="Landscape" checked>
+            <label for="landscape">Landscape</label>
+        </div>
+        <div>
+            <input type="radio" id="portrait" name="fav_genre" value="Portrait">
+            <label for="portrait">Portrait</label>
+        </div>
+        <div>
+            <input type="radio" id="abstrat" name="fav_genre" value="Abstract">
+            <label for="abstrat">Abstract</label><br><br>
+        </div>
+    </fieldset><br>
+
+    <form id = "form"> 
+        <label for="email">Enter your email: </label>
+        <input type="text" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
